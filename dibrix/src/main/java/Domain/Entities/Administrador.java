@@ -1,19 +1,53 @@
-package Domain.Entities;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package inventarioDIBRIX.domain.entities;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
-
-@objid ("dc930aac-e2ed-422a-984e-2a985efe0861")
+/**
+ *
+ * @author Andres Roman
+ */
 public class Administrador {
-    @objid ("77dfc792-1e70-4a00-a035-f5981e9abeee")
-    public String Codigo;
+    public String codigo;
+    public String nombre;
+    public String telefono;
+    public String correo;
 
-    @objid ("6a1feada-973f-487f-82da-a5f2f6cca338")
-    public String Nombre;
+    public Administrador() {
+    }
 
-    @objid ("07c8f542-db20-4018-9c89-b63a4da243c4")
-    public String Telefono;
+    public String getCodigo() {
+        return codigo;
+    }
 
-    @objid ("b7b8795c-c8ed-4017-b558-0bec9d281815")
-    public String Correo;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+    
 }
